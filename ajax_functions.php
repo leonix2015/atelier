@@ -1851,6 +1851,7 @@ if (!function_exists('wpestate_ajax_update_profile')):
         $useremail               = sanitize_text_field($_POST['useremail']);
         $userphone               = sanitize_text_field($_POST['userphone']);
         $usermobile              = sanitize_text_field($_POST['usermobile']);
+        $userorganization        = sanitize_text_field($_POST['userorganization']);
         $userskype               = sanitize_text_field($_POST['userskype']);
         $about_me                = sanitize_text_field($_POST['description']);
         $profile_image_url_small = sanitize_text_field($_POST['profile_image_url_small']);
@@ -1882,7 +1883,7 @@ if (!function_exists('wpestate_ajax_update_profile')):
         if ($old_mobile!=$usermobile) {
             update_user_meta($userID, 'check_phone_valid', 'no') ;
         }
-
+        update_user_meta($userID, 'userorganization', $userorganization) ;
         update_user_meta($userID, 'mobile', $usermobile) ;
 
         update_user_meta($userID, 'facebook', $userfacebook) ;

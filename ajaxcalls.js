@@ -2311,6 +2311,7 @@ jQuery(document).ready(function ($) {
         useremail       =  $('#useremail').val();
         userphone       =  $('#userphone').val();
         usermobile      =  $('#usermobile').val();
+        userorganization  =  $('#userorganization').val();
         userskype       =  $('#userskype').val();
         userwebsite     =  $('#userwebsite').val();
 
@@ -2351,6 +2352,7 @@ jQuery(document).ready(function ($) {
                 'useremail'         :   useremail,
                 'userphone'         :   userphone,
                 'usermobile'        :   usermobile,
+                'userorganization'  :   userorganization,
                 'userskype'         :   userskype,
                 'description'       :   description,
                 'upload_picture'    :   upload_picture,
